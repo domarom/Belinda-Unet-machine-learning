@@ -16,9 +16,7 @@ The model we generated would work well for biological questions investigating da
 
 
 2. **Ground truthing**
-Use some type of image labeller to classify all pixel in the image. This can be done in python. However, we used matlab's image labeller: https://www.mathworks.com/help/vision/ug/get-started-with-the-image-labeler.html
-
-Do this for between 30 to 60% of the data set. Our initial masks/labelled images we used 40% of the images.
+Use some type of image labeller to classify all pixel in the image. This can be done in python. However, we used matlab's image labeller: https://www.mathworks.com/help/vision/ug/get-started-with-the-image-labeler.html. Do this for between 30 to 60% of the data set. Our initial masks/labelled images we used 40% of the images.
 
 3. **Running the model**
 
