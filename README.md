@@ -23,3 +23,21 @@ There are three sets of code in this repository: Dice_loss, cross-validation, an
 
 
 4. **About the code published here**
+5. Libraries used:
+Tensorflow, keras, os, random, numpy, tqdm, skimage, matplotlib.pyplot, PIL, Computer Vision 2
+Preprocessing: (page# line#)
+1.	Resizing images 
+2.	Splitting testing and training data (with masks) X_train, Y_train (mask), X_test
+3.	Split data and convert to numby array
+Model building: (page# line#)
+Contracting path: (page# line#)
+1.	Paths C1 to 4 are the contracting pathways(neurons) with the input image size of 256 by 256. 
+2.	Each pathway has 2D convolution of 3 by 3, a drop out layer, a second 2D convolution followed by a max-pooling layer
+3.	We used a ReLu activation, he_normal initializer and same padding (these function can be modified to improve performance)
+Expansion path: (page# line#)
+1.	Paths C5 to C9 are the expansive pathways (neurons) with concatenations. U6 to U9 are the pathways before concatenation. 
+2.	Each pathway is concatenated to it’s reciprocal contractions pathway (U6 to C4, U7 to C3, U8 to C2 and U9 to C1), has 2D convolution of 3 by 3, a drop out layer, a second 2D convolution followed by a max-pooling layer
+3.	We used a ReLu activation, he_normal initializer and same padding (these function can be modified to improve performance)
+Model fitting: (page# line#)
+1.	Save model 
+
